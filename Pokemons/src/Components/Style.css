@@ -1,0 +1,232 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1e272c;
+  --background-color: #1e272c;
+  --color: #becccf;
+  color: var(--color);
+  --primary-button: #6d80de;
+  --secondary-button: #67539a;
+  --info-button-right: #936ede;
+  --right-background: #121212;
+  --left-background: #925d7f;
+}
+
+.top-content {
+  margin-top: 3rem;
+  text-align: center;
+  line-height: 1rem;
+}
+.top-content h1 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.top-content span {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.top {
+  /* border: 1px solid red; */
+  width: 60%;
+  margin: auto;
+  margin-top: 3rem;
+  height: 3rem;
+  display: flex;
+}
+.top .input {
+  margin: auto;
+  width: 91%;
+  background-color: var(--color);
+  border-radius: 1rem 0rem 0 1rem;
+  color: var(--right-background);
+}
+
+/* ignore this but dont delete, its for the search bar */
+.css-1ff8729-MuiInputBase-root-MuiFilledInput-root::after {
+  border-bottom: 0px solid #fff !important;
+  /* color: #121212; */
+}
+
+.top .inputs {
+  background-color: var(--color);
+  border-radius: 0rem 1rem 1rem 0rem;
+  border-left: #1e272c 1px solid;
+  height: 3.5rem;
+  color: var(--right-background);
+  width: 9%;
+}
+
+.top .inputs:hover {
+  color: var(--color);
+  background-color: var(--info-button-right);
+}
+
+.container {
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: auto;
+  padding-top: 4rem;
+  display: flex;
+}
+
+.card {
+  width: 14.8rem;
+  display: flex;
+  background-color: var(--left-background);
+  border-radius: 1rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 0 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size: 10px;
+  /* font-size: smaller; */
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-right: 20px;
+}
+
+.card:nth-child(2n) {
+  margin-right: 0;
+}
+
+.left-content {
+  /* border: 1px solid blue; */
+  /* width: 50%; */
+  /* display: grid; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* columns: 2 auto; */
+  grid-gap: 1rem;
+}
+
+.sticky {
+  position: sticky;
+  top: 30px;
+  /* margin-top: 30px; */
+}
+
+.right-content {
+  /* border: 1px solid white; */
+  width: 50%;
+  text-align: center;
+  /* position: fixed; */
+  top: 280px;
+  right: 10px;
+}
+
+.right-content img {
+  /* margin: 2rem; */
+  margin: auto;
+  margin-top: -3rem;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+  z-index: 1000;
+  width: 40%;
+}
+
+.left-content,
+.right-content {
+  /* width: 50%; */
+  flex-basis: 50%;
+}
+
+.card-background {
+  border-radius: 1rem;
+  margin: auto;
+  height: 60%;
+  /* border: 1px solid white; */
+  width: 80%;
+  box-shadow: 0 3px 12px rgba(225, 225, 225, 0.5);
+  background-color: var(--primary-button);
+}
+
+.stats {
+  /* border: 1px solid white; */
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-top: -2rem;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+
+.stats h4 {
+  /* padding: 0.5rem; */
+  width: 10rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 1rem;
+  background-color: purple;
+  margin-top: 2rem;
+}
+
+.abilities {
+  width: 100%;
+  margin: auto;
+  text-transform: uppercase;
+  display: grid;
+}
+
+.group {
+  display: flex;
+  justify-content: space-around;
+  /* border: #121212 1px solid; */
+  width: 100%;
+}
+.group1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -2rem;
+  text-transform: uppercase;
+}
+.group1 span {
+  font-size: 10px;
+}
+
+.group2 {
+  margin-top: -2rem;
+
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.name {
+  text-transform: uppercase;
+  font-size: 10px;
+  padding-bottom: 20px;
+}
+
+.btn-groups {
+  display: flex;
+
+  /* justify-content: space-around; */
+  /* border: 1px solid #cccc; */
+  width: 44vw;
+  /* margin: auto; */
+}
+
+.btn-groups button {
+  margin: auto;
+  outline: none;
+  border: none;
+  width: 9.4rem;
+  padding: 0.5rem;
+  /* margin: 1rem; */
+  font-size: 17px;
+  color: var(--color);
+  background-color: var(--info-button-right);
+  border-radius: 1rem;
+}
