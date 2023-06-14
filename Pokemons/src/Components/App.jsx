@@ -47,7 +47,7 @@ const App = () => {
         <h1>Pokedex</h1>
         <span>Is your pokemon on our pokedex?</span>
       </div>
-      <div className="top">
+      {/* <div className="top">
         <TextField
           className="input"
           id="outlined-basic"
@@ -57,7 +57,7 @@ const App = () => {
         <Button className="inputs">
           <SearchIcon />{" "}
         </Button>
-      </div>
+      </div> */}
       <div className="container">
         <div className="left-content">
           <Card
